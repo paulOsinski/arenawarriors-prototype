@@ -42,9 +42,9 @@ Each card has 5 different numerical 'pip' values.  STATIC pips are MOON and SUN.
 
 All of these pip values are added to create a FINAL POWER level, but before that power level is calculated, DYNAMIC pips cancel each other out.
 
-  STRONG cancels SWIFT
-  SWIFT cancels SORCEROUS
-  SORCEROUS cancels STRONG
+  - STRONG cancels SWIFT,
+  - SWIFT cancels SORCEROUS,
+  - SORCEROUS cancels STRONG
 
 So if our 'ETTEN' battled a 'CAVER'S RAIMENT', here's how the math would work out:
 
