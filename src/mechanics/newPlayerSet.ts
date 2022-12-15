@@ -3,7 +3,7 @@ import * as characters from '../cards/characters';
 import * as weapons from '../cards/weapons';
 import { pickCard } from './pickCard';
 
-// picks cards from 3 numbers
+// selects cards using 3 different index values.
 
 export const newPlayerSet = (
   armor: number,
