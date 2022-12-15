@@ -1,4 +1,4 @@
-# arenaWarriors-prototype
+# Arena Warriors Prototype
 Based on a prototype I built for a previous company.  Contains a series of character, armor and equipment cards, with stats.
 
 The goal of this prototype was to simulate a series of 2-player combat interactions between these sets of cards.  With information on how each card performed, we would be able to test our cards for game balance.
@@ -9,38 +9,38 @@ The goal of this prototype was to simulate a series of 2-player combat interacti
 
 Each player gets a character, armor and equipment.
 
-### CARDS
+### Cards
 
 Each card has 5 different numerical 'pip' values.  STATIC pips are MOON and SUN.  DYNAMIC pips are SWIFT, STRONG and SORCEROUS.
 
-### TWO EXAMPLE CARDS
+### Two Example Cards
 
-  Card Name: ETTEN Level 1
-  Pips:
+  Card Name: ETTEN
+  
   {
     MOON: 1,
     SUN: 0,
     SWIFT: 0,
     STRONG: 2,
-    SORCEROUS: 0,
+    SORCEROUS: 0
   };
 
 //
 
-  Card Name: CAVER'S RAIMENT Level 1
-  Pips
+  Card Name: CAVER'S RAIMENT
+  
   {
     MOON: 0,
     SUN: 0,
     SWIFT: 1,
     STRONG: 0,
-    SORCEROUS: 0,
+    SORCEROUS: 0
   };
 
 
-### COMBAT
+### Combat
 
-All of these pip values are added to create a final power level, but before that power level is calculated, DYNAMIC pips cancel each other out.
+All of these pip values are added to create a FINAL POWER level, but before that power level is calculated, DYNAMIC pips cancel each other out.
 
   STRONG cancels SWIFT
   SWIFT cancels SORCEROUS
@@ -51,13 +51,13 @@ So if our 'ETTEN' battled a 'CAVER'S RAIMENT', here's how the math would work ou
   1. Because the ETTEN has 2 STRONG pips, 1 of the SWIFT pips would be removed from the CAVER'S RAIMENT.
   2. The final power levels would then be calculated by adding all of the pips together:
 
-    CAVER'S RAIMENT:  MOON [0] + SUN [0] + SWIFT [1-1] + STRONG [0] + SORCEROUS [0] =   Final power of 0
-    ETTEN:            MOON [1] + SUN [0] + SWIFT [0] + STRONG [2] + SORCEROUS [0] =   Final power of 3
+    CAVER'S RAIMENT:  MOON [0] + SUN [0] + SWIFT [1-1] + STRONG [0] + SORCEROUS [0] =   FINAL POWER of 0
+    ETTEN:            MOON [1] + SUN [0] + SWIFT [0] + STRONG [2] + SORCEROUS [0] =   FINAL POWER of 3
 
   3. The winner is ETTEN, because its final power of 3 is greater than the CAVER'S RAIMENT'S final power of 0.
   
   
-### TESTING FOR POWER LEVELS
+### Testing For Power Levels
 
 Each card has 10 'LEVELS' of power (LEVEL 1 - LEVEL 10).  Higher LEVELS of power have more pips assigned.
 
