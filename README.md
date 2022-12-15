@@ -1,10 +1,6 @@
 # Arena Warriors Prototype
 Based on a prototype I built for a previous company.  Contains a series of character, armor and equipment cards, with stats.
 
-# Dependencies
-- Node.js => install here https://nodejs.org/en/
-
-
 The goal of this prototype was to simulate a series of 2-player combat interactions between these sets of cards.  With information on how each card performed, we would be able to test our cards for game balance.
 
 - The main combat mechanics are written in Typescript
@@ -12,6 +8,12 @@ The goal of this prototype was to simulate a series of 2-player combat interacti
 - After the testing is completed, the data can be exported as a CSV or interacted with using SQL.
 
 Each player gets a character, armor and equipment.
+
+# Dependencies
+- Node.js => install here https://nodejs.org/en/
+
+
+
 
 ### Cards
 
