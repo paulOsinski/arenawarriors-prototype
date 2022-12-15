@@ -1,5 +1,7 @@
 import { Card } from '../types/Card';
 
+// Contains all of the interations between each player.  Determines which player has the advantage in a fight.
+
 export const compareStacks = (a: Card, b: Card) => {
   const finalCard: Card = {
     moon: Math.max(a.moon - b.moon, 0),
