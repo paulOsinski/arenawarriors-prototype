@@ -1,5 +1,6 @@
-// thank you stackoverflow
+// credit due to StackOverflow
 // https://stackoverflow.com/questions/15298912/javascript-generating-combinations-from-n-arrays-with-m-elements
+// For testing purposes, this creates all possible combinations of any element in an array
 
 export const cartesian = (...args: any) => {
   var r: any = [],
