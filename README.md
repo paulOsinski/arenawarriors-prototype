@@ -9,10 +9,12 @@ The goal of this prototype was to simulate a series of 2-player combat interacti
 
 Each player gets a character, armor and equipment.
 
-# Dependencies
-- Node.js => install here https://nodejs.org/en/
+# How to run this code
 
-
+- Clone the repository
+- Install Node.js if you haven't already: https://nodejs.org/en/
+- Install all JS dependencies with <npm install>
+- To create a new test output, use <npm run cardTest>.  By default, this will test all of the cards at level 10.
 
 
 ### Cards
