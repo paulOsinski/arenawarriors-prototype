@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "fight": "ts-node ./src/encounters/fight.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --config .prettierrc './**/*.{ts,tsx,js,jsx}' --write",
     "compareStacks": "ts-node ./src/mechanics/compareStacks.ts",
     "determineWinner": "ts-node ./src/mechanics/determineWinner.ts",

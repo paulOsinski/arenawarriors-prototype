@@ -2,18 +2,17 @@ import * as armors from '../cards/armors';
 import * as characters from '../cards/characters';
 import * as weapons from '../cards/weapons';
 import * as mechanics from '../mechanics';
-import { determineWinner } from '../mechanics';
 import { Card } from '../types/card';
 
 // player 1's cards (test player, should lose)
-export const staticPlayer1: Card = mechanics.stackCards(
+export const examplePlayer1: Card = mechanics.stackCards(
   characters.emberhornLevel1,
   armors.blackguardsAegisLevel1,
   weapons.marshPikeLevel1,
 );
 
 // player 2's cards (test player, should win)
-export const staticPlayer2: Card = mechanics.stackCards(
+export const examplePlayer2: Card = mechanics.stackCards(
   characters.torchwraithLevel1,
   armors.blackguardsAegisLevel1,
   weapons.marshPikeLevel1,
@@ -40,5 +39,3 @@ export const fight = (player1: Card, player2: Card) => {
 
   return areYaWinning;
 };
-
-fight(staticPlayer2, staticPlayer1);
