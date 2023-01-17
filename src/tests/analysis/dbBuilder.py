@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-print('Python is now running correctly')
+print('Hello, Paul let`s get this data!!!')
 
 # define connection and cursor
 conn = sqlite3.connect('./src/tests/analysis/outputDatabase.sqlite')

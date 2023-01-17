@@ -73,3 +73,7 @@ For testing purposes, we assumed each PLAYER would have a CHARACTER, an ARMOR, a
 
 This script simulates combat between all possible combinations of PLAYERS at each LEVEL.  It stores the cards used and the results of combat (Player 1 wins, Player 2 wins, or draw).
 
+### How Do I Run It?
+
+Currently, this only runs using Node.js commands from the terminal.
+
