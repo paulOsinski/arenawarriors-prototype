@@ -2,12 +2,8 @@
 import { Card } from '../types/Card';
 
 export const determineWinner = (a: Card, b: Card) => {
-  //console.log("determining score... ");
 
   const sumValues = (obj: Card) => Object.values(obj).reduce((a, b) => a + b);
-
-  //console.log("player 1 final pips =", sumValues(a));
-  //console.log("player 2 final pips =", sumValues(b));
 
   const player1: number = sumValues(a);
   const player2: number = sumValues(b);
@@ -25,12 +21,9 @@ export const determineWinner = (a: Card, b: Card) => {
 };
 
 export const determineWinnerBoolean = (a: Card, b: Card) => {
-  //console.log("determining score... ");
+
 
   const sumValues = (obj: Card) => Object.values(obj).reduce((a, b) => a + b);
-
-  //console.log("player 1 final pips =", sumValues(a));
-  //console.log("player 2 final pips =", sumValues(b));
 
   const player1: number = sumValues(a);
   const player2: number = sumValues(b);
@@ -42,4 +35,3 @@ export const determineWinnerBoolean = (a: Card, b: Card) => {
   return winner;
 };
 
-// Use game logic to determine the winner of the game

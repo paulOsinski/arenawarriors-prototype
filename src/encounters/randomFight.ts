@@ -1,8 +1,7 @@
 import * as armors from '../cards/armors';
 import * as characters from '../cards/characters';
 import * as weapons from '../cards/weapons';
-import { fight } from '../encounters/fight';
-import * as mechanics from '../mechanics';
+import { fightVerbose } from '../encounters/fightVerbose';
 import { stackCards } from '../mechanics';
 import { newPlayerSet } from '../mechanics/newPlayerSet';
 import { randomCardIndex } from '../tests/randomCardIndex';
@@ -17,7 +16,7 @@ const randomPlayerCreation = (playerName: string, level: number) => {
   console.log('successfully generated', playerName, 'at level ', level);
   console.log(
     playerName,
-    'gear rolls... armor:',
+    'gear rolls -> armor:',
     armorIndex,
     'character:',
     characterIndex,
@@ -38,8 +37,8 @@ const randomPlayerCreation = (playerName: string, level: number) => {
 const player1 = randomPlayerCreation('player1', 1);
 const player2 = randomPlayerCreation('player2', 1);
 
-console.log('player 1 cards =', player1.cards, 'total = ', player1.stack);
+console.log('player 1 cards =', player1.cards, 'player 1 total power = ', player1.stack, '\n');
 
-console.log('player 2 cards =', player2.cards, 'total = ', player2.stack);
+console.log('player 2 cards =', player2.cards, 'player 2 total power = ', player2.stack, '\n');
 
-fight(player1.stack, player2.stack);
+fightVerbose(player1.stack, player2.stack);
