@@ -1,0 +1,4 @@
+/node_modules
+**/*.csv
+**/*.sqlite
+.DS_Store
