@@ -10,6 +10,9 @@ const fs = require('fs');
 
 //run a complete test of a single 'level' of cards.  output: a very large .csv data file within the 'tests' folder.
 
+//This is where you select the array of levels to test.  Select only 2 at a time, or the program will run out of memory.
+const levelsArray = [10];
+
 export const itemIndexes = (level: number) => {
   const armor = filterItemLevel(level, armors);
   const character = filterItemLevel(level, characters);
@@ -19,9 +22,6 @@ export const itemIndexes = (level: number) => {
 
   return itemCombo;
 };
-
-//array of levels to test.  Do 2 at a time, or it'll run out of memory.
-const levelsArray = [10];
 
 levelsArray.forEach((element) => {
   //pick a card level for testing (1-10)
