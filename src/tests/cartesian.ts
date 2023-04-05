@@ -1,3 +1,4 @@
+// this is a utility function that allows for permutations and combinations
 // thank you stackoverflow
 // https://stackoverflow.com/questions/15298912/javascript-generating-combinations-from-n-arrays-with-m-elements
 
