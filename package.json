@@ -5,11 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "format": "prettier --config .prettierrc './**/*.{ts,tsx,js,jsx}' --write",
-    "compareStacks": "ts-node ./src/mechanics/compareStacks.ts",
-    "determineWinner": "ts-node ./src/mechanics/determineWinner.ts",
-    "permutate": "ts-node ./src/mechanics/permutate.ts",
     "randomFight": "ts-node ./src/encounters/randomFight.ts",
-    "pickCard": "ts-node .src/mechanics/pickCard.ts",
     "fullCardTest": "ts-node ./src/tests/fullCardTest.ts",
     "builder": "ts-node ./src/tests/analysis/builder.ts",
     "analysis": "ts-node ./src/tests/analysis/analysis.ts"
