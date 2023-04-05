@@ -9,13 +9,13 @@ The goal of this prototype was to simulate a series of 2-player combat interacti
 
 Each player gets a character, armor and equipment.
 
-# How to run this code
+# Installation:
 
 - Clone the repository
 - Install Node.js if you haven't already: https://nodejs.org/en/
-- Install all JS dependencies with <npm install>
-- To create a new test output, use <npm run cardTest>.  By default, this will test all of the cards at level 10.
+- Install all JS dependencies with **npm install**
 
+# Game Mechanics
 
 ### Cards
 
@@ -65,15 +65,13 @@ So if our 'ETTEN' battled a 'CAVER'S RAIMENT', here's how the math would work ou
   3. The winner is ETTEN, because its final power of 3 is greater than the CAVER'S RAIMENT'S final power of 0.
   
   
-### Testing For Power Levels
+# Running The Script
 
 Each card has 10 'LEVELS' of power (LEVEL 1 - LEVEL 10).  Higher LEVELS of power have more pips assigned.
 
 For testing purposes, we assumed each PLAYER would have a CHARACTER, an ARMOR, and a WEAPON, all at the same LEVEL.  Before combat begins, all of each player's pip values are added together to create a PLAYER.
 
-This script simulates combat between all possible combinations of PLAYERS at each LEVEL.  It stores the cards used and the results of combat (Player 1 wins, Player 2 wins, or draw).
-
-### How Do I Run It?
+## Testing Combat Interaction
 
 Currently, this only runs using Node.js commands from the terminal.
 
@@ -131,5 +129,20 @@ console:
   { outcome: 'player 2 wins' }
 
 ```
+
+## Testing All Possible Combat Interactions (for a single power level)
+
+We can simulate combat between all possible combinations of PLAYERS at each LEVEL.  The script will store the cards used and the results of combat (Player 1 wins, Player 2 wins, or draw) in a .csv file.  It'll also create a seperate 'debug' file which logs the outcome of every fight in more detail.  CSVs are created per-level.
+
+**npm run singleLevelTest** will simulate all possible combats for a user-specified array of levels.  Please note that the .csv files created are very large (1 million lines), so interacting with it directly isn't recommended.  You can specify the levels you want to test on line 14 of fullCardTest.ts, under levelsArray.
+
+I haven't yet figured out a way to run the csv builder for more than 2 levels without running out of memory.
+
+## Compiling and analysing combat tables
+
+Using a Python compiler, we can simulate the combat of every LEVEL and store the results in a SQL database.  Once you have created a CSV for each level (1-10), you can run **npm run builder** to compile all .csv files into a database.
+
+Once you have completed this process, you can use **npm run analysis** to execute SQL commands on the database that you've created.
+
 
 
