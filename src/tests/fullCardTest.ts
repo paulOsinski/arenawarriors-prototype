@@ -102,7 +102,7 @@ levelsArray.forEach(element => {
 
   //save the csv output
   fs.writeFile(
-    `./src/tests/TestOutput/level${levelSelect}.csv`,
+    `./src/tests/test output/level${levelSelect}.csv`,
     csvContent,
     (err: any) => {
       if (err) {
@@ -129,7 +129,7 @@ levelsArray.forEach(element => {
 
   //save the csv output for the debug file
   fs.writeFile(
-    `./src/tests/TestOutput/debug/level${levelSelect}.csv`,
+    `./src/tests/test output/debug/level${levelSelect}.csv`,
     csvDebugContent,
     (err: any) => {
       if (err) {
