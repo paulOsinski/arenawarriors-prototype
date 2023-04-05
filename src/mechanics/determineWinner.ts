@@ -2,7 +2,6 @@
 import { Card } from '../types/Card';
 
 export const determineWinner = (a: Card, b: Card) => {
-
   const sumValues = (obj: Card) => Object.values(obj).reduce((a, b) => a + b);
 
   const player1: number = sumValues(a);
@@ -21,8 +20,6 @@ export const determineWinner = (a: Card, b: Card) => {
 };
 
 export const determineWinnerBoolean = (a: Card, b: Card) => {
-
-
   const sumValues = (obj: Card) => Object.values(obj).reduce((a, b) => a + b);
 
   const player1: number = sumValues(a);
@@ -34,4 +31,3 @@ export const determineWinnerBoolean = (a: Card, b: Card) => {
 
   return winner;
 };
-

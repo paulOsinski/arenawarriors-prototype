@@ -21,10 +21,9 @@ export const itemIndexes = (level: number) => {
 };
 
 //array of levels to test
-const levelsArray = [10]
+const levelsArray = [10];
 
-levelsArray.forEach(element => {
-
+levelsArray.forEach((element) => {
   //pick a card level for testing (1-10)
   const levelSelect: number = element;
   console.log('now testing card level =', levelSelect);
@@ -63,7 +62,6 @@ levelsArray.forEach(element => {
     playerCombos[a],
     playerCombos[b],
   ]);
-
 
   //stack the cards within the combat arrays
 
@@ -112,7 +110,7 @@ levelsArray.forEach(element => {
     },
   );
 
-  console.log('level ' + element + ' csv created')
+  console.log('level ' + element + ' csv created');
 
   //create a debug file for easier sorting
   const debugArray = combatArrays.map(([a, b]: any) => [
@@ -138,5 +136,5 @@ levelsArray.forEach(element => {
       // file written successfully
     },
   );
-  console.log('level ' + element + ' debug csv created')
+  console.log('level ' + element + ' debug csv created');
 });
