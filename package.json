@@ -10,9 +10,7 @@
     "permutate": "ts-node ./src/mechanics/permutate.ts",
     "randomFight": "ts-node ./src/encounters/randomFight.ts",
     "pickCard": "ts-node .src/mechanics/pickCard.ts",
-    "filterItemLevel": "ts-node ./src/tests/filterItemLevel.ts",
-    "cardTest": "ts-node ./src/tests/cardTest.ts",
-    "cartesian": "ts-node ./src/tests/cartesian.ts",
+    "fullCardTest": "ts-node ./src/tests/fullCardTest.ts",
     "builder": "ts-node ./src/tests/analysis/builder.ts",
     "analysis": "ts-node ./src/tests/analysis/analysis.ts"
   },

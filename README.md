@@ -77,3 +77,59 @@ This script simulates combat between all possible combinations of PLAYERS at eac
 
 Currently, this only runs using Node.js commands from the terminal.
 
+"npm run randomFight" will generate 2 random players, and have them battle each other in the console.  The script will select a character, a weapon and an armor randomly for each player.  The console will display all calculations.
+
+Sample console output:
+```neon
+console:
+  successfully generated player1 at level 1
+  player1 -> armor index: 90 character index: 60 weapon index: 50
+
+  successfully generated player2 at level 1
+  player2 -> armor index: 50 character index: 20 weapon index: 90
+
+  player 1 cards = {
+  armorCard: {
+  name: 'traitorsWardLevel1',
+  pips: { moon: 0, sun: 0, swift: 1, strong: 0, sorcerous: 0 }
+  },
+  characterCard: {
+  name: 'pyreImpLevel1',
+  pips: { moon: 1, sun: 0, swift: 1, strong: 0, sorcerous: 1 }
+  },
+  weaponCard: {
+  name: 'meteorFlailLevel1',
+  pips: { moon: 0, sun: 0, swift: 0, strong: 1, sorcerous: 0 }
+  }
+  } player 1 total pips = { moon: 1, sun: 0, swift: 2, strong: 1, sorcerous: 1 }
+  player 1 initial power = 5
+
+  player 2 cards = {
+  armorCard: {
+  name: 'kennelguardsCoatLevel1',
+  pips: { moon: 0, sun: 0, swift: 1, strong: 0, sorcerous: 0 }
+  },
+  characterCard: {
+  name: 'ettenLevel1',
+  pips: { moon: 1, sun: 0, swift: 0, strong: 2, sorcerous: 0 }
+  },
+  weaponCard: {
+  name: 'worldwarpLevel1',
+  pips: { moon: 0, sun: 0, swift: 0, strong: 0, sorcerous: 1 }
+  }
+  } player 2 total pips = { moon: 1, sun: 0, swift: 1, strong: 2, sorcerous: 1 }
+  player 2 initial power = 5
+
+  Time to fight: calculating pip cancellation
+
+  Player 1 pip change { moon: 1, sun: 0, swift: 2, strong: 1, sorcerous: 1 } -> { moon: 0, sun: 0, swift: 0, strong: 0, sorcerous: 0 }
+  After comparing, player 1 final power is 0
+
+  Player 2 pip change { moon: 1, sun: 0, swift: 1, strong: 2, sorcerous: 1 } -> { moon: 0, sun: 0, swift: 0, strong: 1, sorcerous: 0 }
+  After comparing, player 2 final power is 1
+
+  { outcome: 'player 2 wins' }
+
+```
+
+
