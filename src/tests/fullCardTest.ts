@@ -20,7 +20,7 @@ export const itemIndexes = (level: number) => {
   return itemCombo;
 };
 
-//array of levels to test
+//array of levels to test.  Do 2 at a time, or it'll run out of memory.
 const levelsArray = [10];
 
 levelsArray.forEach((element) => {
