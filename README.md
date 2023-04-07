@@ -134,15 +134,10 @@ console:
 
 We can simulate combat between all possible combinations of PLAYERS at each LEVEL.  The script will store the cards used and the results of combat (Player 1 wins, Player 2 wins, or draw) in a .csv file.  It'll also create a seperate 'debug' file which logs the outcome of every fight in more detail.  CSVs are created per-level.
 
-**npm run singleLevelTest** will simulate all possible combats for a user-specified array of levels.  Please note that the .csv files created are very large (1 million lines), so interacting with it directly isn't recommended.  You can specify the levels you want to test on line 14 of fullCardTest.ts, under levelsArray.
-
-I haven't yet figured out a way to run the csv builder for more than 2 levels without running out of memory.
+**npm run fullCardTest** will simulate all possible combats for a user-specified array of levels.  The default selection is all levels from 1-10  Please note that the .csv files created are very large (1 million lines), so interacting with them directly isn't recommended.  You can specify the levels you want to test on line 14 of fullCardTest.ts, under levelsArray.
 
 ## Compiling and analysing combat tables
 
 Using a Python compiler, we can simulate the combat of every LEVEL and store the results in a SQL database.  Once you have created a CSV for each level (1-10), you can run **npm run builder** to compile all .csv files into a database.
 
 Once you have completed this process, you can use **npm run analysis** to execute SQL commands on the database that you've created.
-
-
-
