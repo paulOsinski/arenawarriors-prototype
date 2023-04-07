@@ -1,5 +1,4 @@
 import * as fight from '../encounters/fight';
-import { Card } from '../types/card';
 import { compareStacks } from './compareStacks';
 import { stackCards } from './stackCards';
 
