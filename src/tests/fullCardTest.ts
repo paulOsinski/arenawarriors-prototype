@@ -35,9 +35,7 @@ export const createCSV = (element: number) => {
     cardSets.weapon,
   );
   console.log(
-    'successfully generated ',
-    indexCardCombos.length,
-    'card index combos',
+    'successfully generated ', indexCardCombos.length,'card index combos',
   );
 
   // map the cards according to the indexes
