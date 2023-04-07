@@ -1,7 +1,3 @@
-import * as fight from '../encounters/fight';
-import { compareStacks } from './compareStacks';
-import { stackCards } from './stackCards';
-
 export const permutate = (func: any, cards: any) => {
   let i = 0;
   let resultArray: any = [];
