@@ -1,7 +1,7 @@
 import * as mechanics from '../mechanics';
 import { Card } from '../types/card';
 
-// Simpler script for player fights, used when compiling data
+// Simpler script for player fights, used when compiling data for a test
 
 export const fight = (player1: Card, player2: Card) => {
   const playerBoard = [player1, player2];
