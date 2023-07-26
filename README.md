@@ -1,13 +1,16 @@
 # Arena Warriors Prototype
 Based on a prototype I built for a previous company.  Contains a series of character, armor and equipment cards, with stats.
 
-The goal of this prototype was to simulate a series of 2-player combat interactions between these sets of cards.  With information on how each card performed, we would be able to test our cards for game balance.
+This was a prototype for a basic two-player card game.  None of the mechanics are overly complex, but we'd designed a bunch of trading cards and we wanted a way that these cards could battle and interact.  Our product designer had created a basic rule set, which I replicated in Javascript.  The goal was to figure out if any of these cards were too 'overpowered' by getting a large dataset of card interactions.
 
-- The main combat mechanics are written in Typescript
-- The resulting data is then stored in an SQLite database using PANDAS
-- After the testing is completed, the data can be exported as a CSV or interacted with using SQL.
+This code creates an array of 2-player combat interactions, combining every possible set of cards.  With information on how each card performed, we would be able to test our cards for game balance.
 
-Each player gets a character, armor and equipment.
+# Functions:
+
+- The main combat mechanics are written in TypeScript.  It's a slightly more complicated rock/paper/scissors interaction, where you add multiple cards together, and then compare the results to an opponent's set of cards.
+- Using TypeScript functions from the /tests folder, you can simulate all possible player combinations and get the combat results in an array.
+- The resulting data can then be stored in an SQLite database using PANDAS (Python library).
+- After the testing is completed, the data can be exported as a CSV or queried using SQL.  (The resulting CSV is over a million rows long, so I recommend you aggregate your results with SQL before you export anything.)
 
 # Installation:
 
